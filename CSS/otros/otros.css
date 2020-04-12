@@ -1,0 +1,140 @@
+body {
+    background-color: gray;
+}
+img {
+    border-radius: 10px;
+    margin: auto;
+
+}
+
+.polaroid img {
+    filter: sepia(1);
+}
+.polaroid img:hover {
+    filter: sepia(0);
+
+    /* Eventos del cursos */
+    /* esperendo */
+    cursor: wait;
+    /* no se puede seleccionar */
+    /* cursor: no-drop; */
+    /* como para ingresar texto */
+    /* cursor: text; */
+    /* que se puede seleccionar */
+    /* cursor: pointer; */
+    /* ayuda */
+    /* cursor: help; */
+    /* mover */
+    /* cursor: move; */
+    /* cargando */
+    /* cursor: progress; */
+    cursor: help;
+    cursor: help;
+    cursor: help;
+}
+div.polaroid {
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 4s;
+
+    transition-delay: 1s;
+
+    transition-timing-function: linear;
+
+    animation: skew 4s infinite alternate;
+    animation-timing-function: linear;
+}
+@keyframes skew {
+    0% {
+        transform: skew(20deg);
+        background-color: red;
+    }
+    100% {
+        transform: skew(-20deg);
+        background-color: yellow;
+    }
+}
+
+div.polaroid:hover {
+    transform: skew(10deg);
+
+    animation-name: ejemplo;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+@keyframes ejemplo {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+.texto {
+    text-align: center;
+}
+
+
+.img{
+    width: 300px;
+    height: 300px;
+}
+/* para que la imagen pueda quedar centrada, el div tiene que ser del tamaño de la imagen proximadamente, porque lo que se centra es el tamaño del div no la imagen en si */
+.res{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.imgTexto {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+/* media query: ayudan a generar contenido response dependiendo de la pantalla */
+@media screen and (max-width: 480px) {
+    /*iphone 4*/
+    body {
+        background-color: red;
+    }
+    .img,.imgTexto{
+        display: none;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {
+    /*phablets o tablets*/
+    body{
+        
+        background-color: blue;
+    }
+    
+}
+@media screen and (min-width: 761px) {
+    body{
+        background-color: yellow;
+        
+
+    }
+    div.polaroid{
+        display: inline-block;
+        margin-left: 10%
+    }
+}

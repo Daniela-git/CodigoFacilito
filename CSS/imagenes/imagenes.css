@@ -1,0 +1,78 @@
+/* a las imagenes png no se les puede poner radius, toca agregar un borde antes de hacer el radius */
+
+body {
+    background-color: gray;
+}
+img {
+    border-radius: 10px;
+}
+/* imagenes miniatura
+.thumb{
+    margin: 10px;
+    border: 5px solid black;
+    width: 150px;
+    
+}
+/* hace que la imagen se haga más grande al poner el mouse sobre ella  */
+/* .thumb:hover{
+    box-shadow: 0 0 2px 1px blue;
+    width: 200px;
+}  */
+
+/* para que se ajuste al tamaño de la ventana */
+.imagenes {
+    height: auto;
+    max-width: 100%;
+}
+.polaroid img {
+    /* para dar opacidad a las imagenes */
+    /* opacity: .2; */
+
+    /* filtros */
+    /* filter: blur(5px); */
+    /* filter: brightness(.2); */
+    /* filter: contrast(1.5); */
+    /* filter: grayscale(1); */
+    /* filter: hue-rotate(180deg); */
+    /* filter: invert(.3); */
+    /* filter: saturate(.2); */
+    filter: sepia(1);
+}
+.polaroid img:hover {
+    /* opacity: 1; */
+    /* filter: blur(0); */
+    /* filter: brightness(1); */
+    /* filter: contrast(1); */
+    /* filter: grayscale(.2); */
+    /* filter: hue-rotate(0deg); */
+    /* filter: invert(0); */
+    /* filter: saturate(1); */
+    filter: sepia(0);
+}
+
+/* efento polaroid */
+div.polaroid {
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.texto {
+    text-align: center;
+}
+
+/* texto a las imagenes */
+.img {
+    position: relative;
+}
+.imgTexto {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+}

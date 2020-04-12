@@ -1,0 +1,17 @@
+/* Colores */
+
+h1 {
+  /* color name: usar los nombres de los colores */
+  /* background-color: cyan ;
+    color: orchid; */
+
+  /* usando hexadecimal */
+  /* color: #7674FF;
+    background-color: #1D1D40; */
+
+  /* usando rgb y rgba: son los más compatibles con los navegadores */
+  text-align: center;
+  color: rgb(128, 95, 46);
+  /* los rgba permiten dar opacidad, es el ultimo valor y va de 0 a 1 */
+  background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    background-color: black;
+}
+
+.img {
+    height: 600px;
+    width: 300px;
+    max-width: 100%;
+}
+p {
+    color: white;
+    font-size: 20px;
+}
+div.texto {
+    /* margin: 0% 33% 0% 33%; */
+    /* para poder centrar la imagen hay que darle al div un tamaño parecido al de la imagen para que funcione */
+    /* background-color: white; */
+    width: 300px;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+.img-texto{
+    position: absolute;
+    margin-left: 20px;
+    
+}
+
+#episodio{
+    top: 70%;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 30px;
+}
+#nombre{
+    top: 80%;
+    padding: 10px;
+    text-transform: capitalize;
+}
+/* para que la imagen por si sola quede en el centro se debe poner display block, creo que se debe a que la etiqeta img por si solo no es de tipo bloque entonces el margin auto funciona diferente, ya que espera que otro elemento se pueda poner al lado  */
+.espada{
+    margin: auto;
+    display: block;
+    border: 10px double orange ;
+}

@@ -1,0 +1,68 @@
+/* SELECTOR POR ETIQUETA HTML */
+/* los vañpres se pueden sobreescribir más abajo */
+/* para elegir barias etiquetas se separan por una coma */
+h1,p{
+    color:blue;
+    text-align: center;
+}
+/* de esta forma se usa cuando una etiqueta esta dentro de otra */
+span p,h1{
+    color:orange;
+    font-size: 20px;
+}
+
+
+/* selector por clase */
+.ejemplo{
+    background-color: blue;
+    height: 20px;
+}
+
+h2.ejemplo{
+    color: white;
+    height: 40px;
+}
+
+/* selector por id */
+#titulo{
+    color:red;
+    text-align: center;
+}
+/* para afectar a un solo hijo se usa > Etiqueta hijo seleccionada*/
+/* #colores >p{
+    background-color: yellow;
+    color: blue;
+    font-size: 2em;
+} */
+
+/* para afectar a los nietos se usa > Etiqueta hijo > Etiqueta nieto  */
+/* en este caso no va a importar lo que digan los hijo o nietos, no se va a sobreescribir*/
+#colores >ul>li{
+    background-color: yellow;
+    color: blue;
+    font-size: 2em;
+}
+#orange{
+    /* con el important se logra que se sobreescriba la caracteristica */
+    color:orange !important; 
+}
+#green{
+    color:green;
+}
+#red{
+    color:red;
+}
+
+/* selectores de referencias */
+/* para combiar todas las a con href*/
+/* a[href]{
+    color:red
+} */
+
+/* para especificar un href en espacifico */
+a[href='codigofacilito.com']{
+    color:red
+}
+a[class='clase']{
+    color:green
+}

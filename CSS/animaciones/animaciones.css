@@ -1,0 +1,128 @@
+body {
+    background-color: gray;
+}
+img {
+    border-radius: 10px;
+}
+.imagenes {
+    height: auto;
+    max-width: 100%;
+}
+.polaroid img {
+    filter: sepia(1);
+}
+.polaroid img:hover {
+    filter: sepia(0);
+}
+div.polaroid {
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: block;
+
+    /* transiciones */
+    /* cuando encuentre una transformacion la va a hacer en 2s,es decir, se toma 2s para realizar en total la transfomación y 2s para volver al estado normal , se ve mejor que solo usar transform*/
+    /* tambien aplica para el wight, lo que importa es que luego se cambie en un hover o asi */
+    transition: transform 4s;
+
+    /* espera 1s antes de empezar la transformacion */
+    transition-delay: 1s;
+
+    /* velocidad de la transicion */
+    /* linear: la misma velocidad de principio a fin 
+        ease: lento.rapido.lento
+        ease-in: lento.rapido
+        ease-out: rapido.lentp
+        ease-in-out:lento
+    */
+    transition-timing-function: linear ;
+
+    /* animacion */
+    /* esta linea reemplaza las debajo de ella */
+    animation: skew 4s infinite alternate;
+    /* animation-name: skew ; */
+    /* animation-duration: 4s; */
+    /* numero de veces que se repte la animacion */
+    /* animation-iteration-count: infinite;  */
+    /*  hace que la animacion se vea más fluida al hacer que en el 100 no se vaya bruscamente a la posicion inicial sino que donde finaliza vuelve a comenzar*/
+    /* animation-direction: alternate; */
+    /* velocidad de la animación */
+    animation-timing-function: linear;
+    
+}
+/* este tiene conflicto con el de abajo, desactivar este para ver bien el de abajo */
+@keyframes skew{
+    0%{transform: skew(20deg);background-color: red;}
+    100%{transform: skew(-20deg);background-color: yellow ;}
+}
+
+div.polaroid:hover {
+    /* transformaciones */
+    /* se mueve en x,y */
+    /* transform: translate(50px, 50px);  */ 
+
+    /* se mueve solo en x */
+    /* transform: translateX(50px);  */
+
+    /* se mueve solo en y */
+    /* transform: translateY(50px);  */
+
+    /* gira la imagen (pueden ser negativo */
+    /* transform: rotate(20deg); */
+
+    /* hace que la imagen se agrande */
+    /* transform: scale(2,2); */
+
+    /* hace que crezca solo en x */
+    /* transform: scaleX(2,2); */
+
+    /* hace que crezca solo en y */
+    /* transform: scaleY(2,2); */
+
+    /* lo mueve como un trapecio */
+    transform: skew(10deg);
+
+    /* animaciones */
+    /* para que la animacion 'ejemplo' funcione */
+    animation-name: ejemplo;
+    /* tiempo que se demora la duracion */
+    animation-duration: 4s;
+    /* tiempo de retraso antes de ejecutar la animacio (opcional) */
+    animation-delay: 1s;
+
+}
+
+/* animacion */
+@keyframes ejemplo{
+    /* el porcentaje hace referencia a el momento de la animacion 0 es el inicio y 100 el final */
+    /* inicio */
+    /* from{background-color: red;} */
+    0%{background-color: red;}
+
+    /* en medio de la animacion */
+    25%{background-color: blue;}
+    50%{background-color: green ;}
+    
+    /* fin */
+    /* to{background-color: yellow;} */
+    100%{background-color: yellow ;}
+}
+
+.texto {
+    text-align: center;
+}
+.img {
+    position: relative;
+}
+.imgTexto {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+

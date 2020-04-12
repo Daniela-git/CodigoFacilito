@@ -1,0 +1,45 @@
+body{
+    background-image: url('sinRostro.jpg');
+
+    /* para que la imagen no se repita */
+    /* con reapeat-x se repite de manera horizontal */
+    /* con reapeat-y se repite de manera vertical */
+    background-repeat: no-repeat; 
+
+    /* background-position: center top; */
+    background-position: 50% 50%;
+
+    /* hece que lo de arriba quede bien, y que el fondo no se mueva */
+    background-attachment: fixed;
+
+    /* el tamaño puede ser definido de diferentes formas, por porcentajes, pixeles, entre otros */
+    /* background-size: 100% 100%; */
+    background-size: 100px 100px;
+
+
+    /* gradientes: permite hacer degradados, se ponen los colores en el orden que se quier que salgan */
+    /* background: linear-gradient(red,blue); */
+
+    /* tambien se puede cambiar la horientacion del degradado, poniendo de primer parametro hacia que lado quiere que se dirija(to right, to left, to bottom */
+    /* background: linear-gradient(to right, rgb(194, 139, 139),rgb(114, 114, 224),green,black); */
+
+    /* tambien se pueden poner la forma que se quiere de degradado con grados de inclinación */
+    /* background: linear-gradient(45deg, rgb(194, 139, 139),rgb(114, 114, 224),green,black); 
+    */
+    /* para usar colores con transparencia */
+    /* background: linear-gradient(-80deg,rgba(255,0,0,0),rgba(255,0,0,1)); */
+
+    /* para que el gradiente se repita */
+    /* background: repeating-linear-gradient(-80deg,red, yellow 10%,green 30%); */
+
+    /* para que el degradado comience en el centro se usa el radial-gradient*/
+    /* background: radial-gradient(red, yellow ,green); */
+    background: radial-gradient(circle,red, yellow ,green);
+
+
+
+    
+}
+.space{
+    height: 300px;
+}

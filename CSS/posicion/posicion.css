@@ -1,0 +1,36 @@
+/*  Posiciones */
+
+/* exiten 2 tipos de elemento: 
+-por bloque siempre empiezan en una nueva linea y ocupan todo el espacio disponible. Ejm: las etiquetas h
+-en linea: no empiezan en una nueva linea pero si ocupan el espacio disponible. Ejm: a e img
+*/
+
+h1 {
+  color: red;
+  /* hay cuatro posibles opciones para modificar la posicion */
+  /*por defecto*/
+  /* position: static; */
+
+  /* fixed: hace que se quede quieto y se posiciona sobre todos los elementos */
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  right: 50%;
+}
+h2 {
+  /* absolute:  queda en la posicion donde se le diga pero dependiendo del elemento padre (el padre tiene que ser relativo). en este caso lo manda a la posicion 0,0. tambien esta encima de los demás elementos
+    */
+  position: absolute;
+}
+.container {
+  position: relative;
+  height: 400px;
+  border: 1px solid red;
+}
+img {
+  /* parecida a la static pero se pueden hacer más modificaciones que la hacen diferente*/
+  size: 10px;
+  position: relative;
+  top: 110px;
+  right: 20px;
+}

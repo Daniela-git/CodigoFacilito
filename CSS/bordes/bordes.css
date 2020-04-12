@@ -1,0 +1,13 @@
+h1 {
+  background-color: orchid;
+
+  /* el borde puede ser, none: sin, hidden:oculto, dotted:punteado, dashed: lineas ,solid: solido, double:doble linea ......  */
+  /* tambien se le puede agregar el tamaño que se quiere */
+  border: solid blue 10px;
+
+  /* se puede poner el estilo en una sola parte del borde con top, left, bottom, right */
+  /* border-top: double blue 10px; */
+
+  /* border radius */
+  border-radius: 10px;
+}

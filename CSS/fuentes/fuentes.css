@@ -1,0 +1,43 @@
+h1 {
+  background-color: paleturquoise;
+
+  /* font family: para cambiar el tipo de fuente */
+  /* Fuentes comunes */
+  /* font-family: Arial; */
+
+  /* fuentes externas: primero se copia el link en el html y luego se llama la fuente como diga en la documentación de esta */
+  font-family: 'Gotu', sans-serif;
+  /* -------------------- */
+  /* font style */
+  font-style: italic;
+  /* font size: tamaño */
+  /* el em es un tamaño que se usa actualmente, 1 em son casi 16px. Tambien se puede usar pixeles y porcentajes */
+  font-size: 2.5em; /*2.5em = 40px, 40px/16*/
+}
+
+p {
+  font-family: Arial;
+
+  /* control de los espacios en blancos y saltos de a */
+  /* el nowrap: hace que el texto sea una sola linea sin saltos de linea */
+  /* pre: respeta los saltos de linea que se pongan en el texto original de html */
+  /* pre -line: hace que no se salga del contenedor y respete los saltos de linea */
+  /* white-space: normal; */
+
+  /* word-spacing: distancia entre las palabras */
+  /* tambien se pueden usar valores negativos */
+  word-spacing: 20px;
+}
+a {
+  /* Formato de texto: puede ser a la izquierda, centro y derecha */
+  text-align: center;
+  color: orange;
+  /* puede usarse para poner la linea que tienen las a arriba(overline), abajo(underline) y en medio(line-through), con none se pueden quitar*/
+  text-decoration: none;
+  /* se pueden poner las letras en mayus(uppercase), minus(lowercase) o en mayus la/s primera/s (capitalize) */
+  text-transform: capitalize;
+}
+h2 {
+  /* text shadow: parametros: posicion horizontal, posicion vertical, efecto de desenfoque, color */
+  text-shadow: 1px, 2px, 2px blue;
+}
